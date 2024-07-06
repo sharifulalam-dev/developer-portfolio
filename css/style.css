@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --color-primary: #fd6e0a;
+  --color-secondary: #474747;
+  --color-tertiary: #757575;
+}
 *,
 *::before,
 *::after {
@@ -20,8 +26,19 @@ body {
 }
 
 /* navbar styles */
+
+.header {
+  background-image: url("../images/developer.png"),
+    url("../images/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: top left, right bottom;
+}
 .header-nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7rem;
+  margin-left: 12rem;
 }
 
 .header-nav__title {
@@ -30,5 +47,80 @@ body {
 }
 
 .header__nav-letter {
-  color: #fd6e0a;
+  color: var(--color-primary);
+}
+
+.header-nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__list--item {
+  margin-right: 5rem;
+}
+
+.header-nav__list--item a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-size: 2rem;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  padding: 1.9rem 3.5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner__text {
+  width: 58.5rem;
+  margin-left: 13rem;
+}
+
+.banner__greet {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.banner__name {
+  font-size: 8.5rem;
+  font-weight: 700;
+}
+
+.banner__description {
+  font-size: 1.8rem;
+  color: var(--color-tertiary);
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.banner__btn {
+  display: flex;
+}
+
+.banner__btn--download {
+  margin-right: 3rem;
+}
+
+.banner__btn--contact {
+  background-color: #fff;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.banner__img {
+  width: 58.4rem;
+  margin-right: 3.8rem;
 }
