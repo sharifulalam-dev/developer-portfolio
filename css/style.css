@@ -137,10 +137,6 @@ body {
   background-color: var(--color-bg);
 }
 
-.section-about {
-  border: 1px solid #000;
-}
-
 .section__title {
   font-size: 35px;
   font-weight: 700;
@@ -213,4 +209,50 @@ body {
   line-height: 28px;
   text-align: left;
   color: var(--color-tertiary);
+}
+
+.resume__section {
+  margin-top: 13rem;
+}
+.resume {
+  display: flex;
+  gap: 2rem;
+  margin-top: 13rem;
+}
+
+.resume__education-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.resume__education-container:not(:last-child) {
+  border-bottom: 1px solid rgba(209, 209, 209, 1);
+  margin-bottom: 3rem;
+}
+.resume__education-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.resume__education-subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-tertiary);
+  margin-bottom: 2rem;
+}
+
+.resume__education-description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.btn__container {
+  text-align: center;
+}
+
+.resume__btn {
+  text-transform: uppercase;
+  margin-top: 5rem;
 }
