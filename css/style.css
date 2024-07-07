@@ -4,6 +4,7 @@
   --color-primary: #fd6e0a;
   --color-secondary: #474747;
   --color-tertiary: #757575;
+  --color-bg: #fff8f3;
 }
 *,
 *::before,
@@ -32,6 +33,7 @@ body {
     url("../images/header_bg.png");
   background-repeat: no-repeat;
   background-position: top left, right bottom;
+  margin-bottom: 13rem;
 }
 .header-nav {
   display: flex;
@@ -123,4 +125,92 @@ body {
 .banner__img {
   width: 58.4rem;
   margin-right: 3.8rem;
+}
+
+.main {
+  width: 114rem;
+  margin: 0 auto;
+}
+
+.about {
+  padding: 13.1rem 15.7rem;
+  background-color: var(--color-bg);
+}
+
+.section-about {
+  border: 1px solid #000;
+}
+
+.section__title {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section__description {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--color-tertiary);
+  margin-bottom: 3rem;
+}
+
+.section__info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section__info--details > p {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: var(--color-tertiary);
+}
+
+.section__info--details h4 {
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+
+.skill-section {
+  margin-top: 13rem;
+}
+
+.skill__description {
+  padding: 0 11.6rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.skill__item-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.skill__item {
+  padding: 3rem;
+  box-shadow: 0 6px 5rem rgba(0, 0, 0, 0.06);
+}
+.skill__item-img {
+  width: 4.4rem;
+  height: 4.4rem;
+}
+.skill__item-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 27.24px;
+  margin: 3rem 0 2rem 0;
+}
+.skill__item-description {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: var(--color-tertiary);
 }
