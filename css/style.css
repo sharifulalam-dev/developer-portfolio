@@ -304,6 +304,9 @@ body {
 .footer__form > * {
   border: none;
 }
+input[type="text"] {
+  margin-top: -1.6rem;
+}
 
 input[type="text"],
 input[type="email"] {
@@ -312,6 +315,12 @@ input[type="email"] {
   color: rgba(117, 117, 117, 1);
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea {
+  outline: none;
 }
 
 textarea {
