@@ -335,3 +335,19 @@ textarea {
   font-size: 2rem;
   font-weight: 700;
 }
+
+@media screen and (max-width: 576px) {
+  .skill__item-container,
+  .resume,
+  .footer__section {
+    flex-direction: column;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .resume {
+    padding: 5rem;
+  }
+}
