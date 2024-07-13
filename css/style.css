@@ -335,19 +335,73 @@ textarea {
   font-size: 2rem;
   font-weight: 700;
 }
-
+.hide {
+  display: none;
+}
 @media screen and (max-width: 576px) {
-  .skill__item-container,
-  .resume,
-  .footer__section {
-    flex-direction: column;
+  .main {
+    width: auto;
   }
-
-  .footer {
-    width: 100%;
+  .skill__item-container,
+  .resume {
+    flex-direction: column;
+    width: auto;
   }
 
   .resume {
+    margin-top: 0;
+  }
+  .skill__item {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .resume {
     padding: 5rem;
+  }
+
+  /* Adjustments for screens up to 576px wide */
+  @media (max-width: 576px) {
+    .footer__section {
+      width: auto; /* Remove fixed width */
+      padding: 6rem 2rem; /* Adjust padding for smaller screens */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items vertically */
+      text-align: center; /* Center text */
+      gap: 3rem; /* Reduce the gap between items */
+    }
+
+    .footer__heading {
+      font-size: 2.5rem; /* Decrease font size */
+      margin-bottom: 1rem; /* Adjust spacing */
+    }
+
+    .footer__description {
+      font-size: 1.4rem; /* Decrease font size */
+      margin-bottom: 2rem; /* Adjust spacing */
+    }
+
+    .footer__form {
+      width: 100%; /* Full width for form */
+    }
+
+    .footer__social {
+      margin-bottom: 2rem; /* Adjust spacing */
+    }
+
+    .footer__social img {
+      width: 2rem; /* Decrease icon size */
+      height: 2rem; /* Decrease icon size */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 1.4rem 1.6rem; /* Adjust input padding */
+      font-size: 1.4rem; /* Decrease font size */
+    }
+
+    .footer__btn {
+      width: 100%; /* Full width for button */
+    }
   }
 }
