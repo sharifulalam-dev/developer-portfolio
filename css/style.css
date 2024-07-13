@@ -439,4 +439,8 @@ textarea {
   .skill__description {
     padding: 5px;
   }
+
+  .banner__name {
+    line-height: 10rem;
+  }
 }
