@@ -339,6 +339,11 @@ textarea {
   display: none;
 }
 @media screen and (max-width: 576px) {
+  .section__info {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
   .banner,
   .header-nav,
   .header-nav__list {
