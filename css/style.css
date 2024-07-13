@@ -74,7 +74,7 @@ body {
   font-weight: bold;
   font-size: 2rem;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   border: none;
   cursor: pointer;
 }
@@ -118,7 +118,7 @@ body {
 
 .banner__btn--contact {
   background-color: #fff;
-  border: 1px solid var(--color-primary);
+  border: 0.1rem solid var(--color-primary);
   color: var(--color-primary);
 }
 
@@ -138,7 +138,7 @@ body {
 }
 
 .section__title {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 3rem;
@@ -158,18 +158,18 @@ body {
 
 .section__info--details > p {
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 3rem;
   text-align: center;
   color: var(--color-tertiary);
 }
 
 .section__info--details h4 {
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 3rem;
   text-align: center;
 }
 
@@ -190,7 +190,7 @@ body {
 
 .skill__item {
   padding: 3rem;
-  box-shadow: 0 6px 5rem rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0.6rem 5rem rgba(0, 0, 0, 0.06);
 }
 .skill__item-img {
   width: 4.4rem;
@@ -199,14 +199,14 @@ body {
 .skill__item-title {
   font-size: 2rem;
   font-weight: 700;
-  line-height: 27.24px;
+
   margin: 3rem 0 2rem 0;
 }
 .skill__item-description {
   font-family: Open Sans;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 28px;
+
   text-align: left;
   color: var(--color-tertiary);
 }
@@ -227,7 +227,7 @@ body {
 }
 
 .resume__education-container:not(:last-child) {
-  border-bottom: 1px solid rgba(209, 209, 209, 1);
+  border-bottom: 0.1rem solid rgba(209, 209, 209, 1);
   margin-bottom: 3rem;
 }
 .resume__education-heading {
@@ -339,6 +339,11 @@ textarea {
   display: none;
 }
 @media screen and (max-width: 576px) {
+  .banner,
+  .header-nav,
+  .header-nav__list {
+    flex-direction: column;
+  }
   .main {
     width: auto;
   }
