@@ -343,9 +343,28 @@ textarea {
   .header-nav,
   .header-nav__list {
     flex-direction: column;
+    text-align: center;
   }
   .main {
     width: auto;
+  }
+
+  .header {
+    background-image: none;
+  }
+  .banner__img,
+  .banner__text {
+    width: auto;
+  }
+  .header-nav__title {
+    margin-left: -5rem;
+  }
+
+  .banner__btn {
+    justify-content: center;
+  }
+  .banner__text {
+    margin: 0;
   }
   .skill__item-container,
   .resume {
