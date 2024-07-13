@@ -357,9 +357,13 @@ textarea {
   .header {
     background-image: none;
   }
+
+  .about {
+    padding: 0.5rem;
+  }
   .banner__img,
   .banner__text {
-    width: auto;
+    width: 100%;
   }
   .header-nav__title {
     margin-left: -5rem;
