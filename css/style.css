@@ -358,9 +358,6 @@ textarea {
     background-image: none;
   }
 
-  .about {
-    padding: 0.5rem;
-  }
   .banner__img,
   .banner__text {
     width: 100%;
@@ -436,5 +433,10 @@ textarea {
     .footer__btn {
       width: 100%; /* Full width for button */
     }
+  }
+
+  .about,
+  .skill__description {
+    padding: 5px;
   }
 }
